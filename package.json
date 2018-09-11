@@ -1,0 +1,29 @@
+{
+  "name": "bitbucket-issues-cli",
+  "version": "1.0.0",
+  "description": "Bitbucket Issues Cli",
+  "main": "index.js",
+  "scripts": {
+    "not-estimated": "node ./index.js \"estimated==0,state=>new;open\" issues_list.txt",
+    "all": "node ./index.js issues_list.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salazarguille/bitbucket-issues-cli.git"
+  },
+  "author": "guillesalazar@gmail.com",
+  "license": "ISC",
+  "homepage": "https://github.com/salazarguille/bitbucket-issues-cli.git#readme",
+  "keywords": [
+    "bitbucket",
+    "api",
+    "issues",
+    "query",
+    "cli"
+  ],
+  "dependencies": {
+    "bitbucket": "^1.0.3",
+    "dotenv": "^6.0.0",
+    "lodash": "^4.17.5"
+  }
+}
